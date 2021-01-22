@@ -3,6 +3,7 @@ package com.example.circletextview;
 import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
@@ -13,6 +14,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		circleTextview = (CircleView) findViewById(R.id.circleTextview);
 		circleTextview.setBackgroundColor(Color.RED);
+		Log.e("glw", "onCreate: ");
 	}
 
 	@Override
